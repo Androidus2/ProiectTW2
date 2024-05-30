@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aqualood</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/Icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div id="top">
+        <h1 id="userName">You are not logged in!</h1>
+        <div id="topButtons">
+            <button id="logout">Logout</button>
+            <button id="register">Register</button>
+            <button id="login">Login</button>
+        </div>
+    </div>
+
+    <div id="registerForm">
+        <div class="formBox">
+            <h2>Register</h2>
+            <form>
+                <input type="text" id="registerUsername" placeholder="Username" name="registerUsername" required>
+                <input type="text" id="registerName" placeholder="Name" name="registerName" required>
+                <input type="text" id="registerSurname" placeholder="Surname" name="registerSurname" required>
+                <input type="email" id="registerEmail" placeholder="Email" name="email" required>
+                <input type="tel" id="registerPhoneNumber" placeholder="Phone Number" name="registerPhoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="password" id="registerPassword" placeholder="Password" name="registerPassword" required>
+                <input type="password" id="registerPassword2" placeholder="Repeat password" name="registerPassword2" required>
+                <button id="registerSubmit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginForm">
+        <div class="formBox">
+            <h2>Login</h2>
+            <form>
+                <input type="text" id="loginUsername" placeholder="Username" name="loginUsername" required>
+                <input type="password" id="loginPassword" placeholder="Password" name="loginPassword" required>
+                <button id="loginSubmit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="mainContent">
+        <h1>Welcome to Aqualood!</h1>
+
+        <p>Aqualood is a website where you can play with a square.</p>
+
+        <canvas id="canv"></canvas>
+
+        <p>Use the arrow keys to move the square.</p>
+        <p>Press C to give the square a random color.</p>
+        <p>Press SPACE to reset the square's position in case it gets lost.</p>
+
+        <p>Previous colors:</p>
+        <ul id="prevColors"></ul>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
